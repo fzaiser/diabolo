@@ -1,0 +1,9 @@
+# true EV: 0.6666...
+
+X ~ Geometric(1/2);
+
+while flip(1/2) {
+    X -= 1;
+}
+
+return X;

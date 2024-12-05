@@ -1,0 +1,8 @@
+# true EV: 1
+# true tail: 0.5^n
+
+X := 0;
+while flip(1/2) {
+    X += 1;
+}
+return X

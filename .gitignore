@@ -1,0 +1,8 @@
+*.out
+*.json
+target/
+.vscode/
+*.perf
+*.data
+*.log
+*.pdf

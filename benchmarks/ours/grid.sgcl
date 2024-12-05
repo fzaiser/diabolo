@@ -1,0 +1,14 @@
+# flags(geobound): -d 3
+
+# true EV: 2.75
+
+X := 0;
+Y := 0;
+while X < 2 || Y < 2 {
+    if flip(1/2) {
+        X += 1;
+    } else {
+        Y += 1;
+    }
+}
+return Y;

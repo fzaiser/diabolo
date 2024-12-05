@@ -1,0 +1,6 @@
+output/
+outputs/
+*.out
+*.err
+bench-results.json
+__pycache__/

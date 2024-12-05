@@ -1,0 +1,17 @@
+# flags(geobound-ev): -u 70 -d 2
+# flags(geobound-tail): -d 2
+
+# true EV: 2
+# true tail: n^{-3/2}0.8660...^n
+
+x := 1;
+n := 0;
+while x != 0 {
+    if flip(1/4) {
+        x += 1;
+    } else {
+        x -= 1;
+    }
+    n += 1;
+}
+return n;

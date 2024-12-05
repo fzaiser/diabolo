@@ -1,0 +1,32 @@
+# flags(geobound-existence): -u 1
+
+# true EV: 3.5
+# true tail: 0.8318...^n
+# = (1 / 1.2020992758908227132)^n
+# where m≈1.2020992758908227132 is a root of -12 + m + m^2 + m^3 + m^5 + m^4 + m^6
+# There might be other polynomial factors in the asymptotics.
+
+n ~ Geometric(1/2);
+m := 0;
+
+while 0 < n {
+    m +~ UniformDisc(1, 7);
+    n -= 1;
+}
+
+return m;
+
+#= https://github.com/LKlinke/Prodigy/blob/26645a819514ed689ef391a939bc21a3f32f67be/pgfexamples/equivalence/trivial_iid.pgcl
+
+nat n;
+nat m;
+nat tmp;
+
+while (0 < n) {
+ tmp := unif(1,6);
+ m := m + tmp;
+ tmp := 0;
+ n := n-1
+}
+
+=#

@@ -1,0 +1,28 @@
+# true EV: 1
+# true tail: 0.6666...^n
+
+n ~ Geometric(1/2);
+c := 0;
+
+while n > 0 {
+    if flip(1/2) {
+        n -= 1;
+    } else {
+        c += 1;
+    }
+}
+
+return c;
+
+#= https://github.com/LKlinke/Prodigy/blob/26645a819514ed689ef391a939bc21a3f32f67be/pgfexamples/equivalence/n_geometric.pgcl
+
+nat n;
+nat c;
+nat tmp;
+
+while(n > 0){
+    {n := n - 1 } [1/2] {c := c + 1}
+    tmp := 0
+}
+
+=#

@@ -1,0 +1,19 @@
+# flags(geobound): -d 2
+
+# true EV: 0
+# true tail: 0
+
+X := 0;
+Y := 0;
+
+while flip(1/2) {
+    X += 1;
+    Y += 1;
+}
+
+while X > 0 {
+    X -= 1;
+    Y -= 1;
+}
+
+return Y;
