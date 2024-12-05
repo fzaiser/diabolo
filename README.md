@@ -1,6 +1,6 @@
-# Diabolo: a Tool for Bounding the Posterior Distributions of Discrete Probabilistic Programs with Loops
+# Diabolo: a Tool for Automatically Bounding the Distributions of Discrete Probabilistic Programs with Loops
 
-**Diabolo** (**Di**screte **Di**stribution **A**analysis via **Bo**unds, supporting **l**oops and **o**bservations) is an implementation of the two methods in
+**Diabolo** (**Di**screte **Di**stribution **A**analysis via **Bo**unds, supporting **L**oops and **O**bservations) is an implementation of the two methods in
 
 > Zaiser, Murawski, Ong: *Guaranteed Bounds on Posterior Distributions of Discrete Probabilistic Programs with Loops.* [(POPL 2025)](https://doi.org/10.1145/3704874) [(arxiv version)](https://arxiv.org/abs/2411.10393)
 
@@ -23,7 +23,7 @@ Diabolo is written in Rust and can be built with Cargo as usual.
 3. Install the dependencies Z3, CBC, and IPOPT (see below)
 4. Build the project:
    ```shell
-   cargo run --release --bins
+   cargo build --release --bins
    ```
    This may take a minute or two.
    The build results is then available at `target/release/residual` (for the Residual Mass Semantics) and `target/release/geobound` (for the Geometric Bound Semantics).
